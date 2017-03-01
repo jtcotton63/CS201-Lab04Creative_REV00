@@ -1,0 +1,58 @@
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taco Finder</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="./styles.css" rel="stylesheet">
+	<script src="app.js"></script>
+
+</head>
+<body ng-app="TacoApp" ng-controller="MainCtrl">
+
+	<div class="container"><h2>Taco Finder</h2></div>
+	<div id="exTab3" class="container">	
+		<ul  class="nav nav-pills">
+			<li class="active">
+				<a  href="#tab1" data-toggle="tab">Find</a>
+			</li>
+			<li>
+				<a href="#tab2" data-toggle="tab">Add</a>
+			</li>
+		</ul>
+
+		<div class="tab-content clearfix">
+				<!-- The content of the  find tab -->
+				<div class="tab-pane active" id="tab1">
+		        	<h3>Find a taco place in your area</h3>
+				</div>
+				<!-- The content of the add a place tab -->
+				<div class="tab-pane" id="tab2">
+		         	<h3>Know of another taco place? Add it here!</h3>
+		         	<form ng-submit="addTacoShop()" style = "margin-top30px;">
+				      <input type="text" ng-model="formName" placeholder="Taco shop name"></input>
+				      <br>
+				      <input type="text" ng-model="formAddress" placeholder="Address"></input>
+				      <br>
+				      <input type="text" ng-model="formCity" placeholder="City"></input>
+				      <br>
+				      <input type="text" ng-model="formState" placeholder="State"></input>
+				      <br>
+				      <input type="text" ng-model="formZip" placeholder="Zip"></input>
+				      <br>
+				      Style of tacos: <select ng-model="formStyle">
+				      	<option value="Authentic">Authentic</option>
+				      	<option value="TexMex">TexMex</option>
+				      </select>
+				      <br>
+				      <button type="submit">Add taco place</button>
+				    </form>
+				</div>
+	  </div>
+		
