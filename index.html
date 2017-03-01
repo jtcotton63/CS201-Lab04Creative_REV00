@@ -28,31 +28,86 @@
 		</ul>
 
 		<div class="tab-content clearfix">
-				<!-- The content of the  find tab -->
-				<div class="tab-pane active" id="tab1">
-		        	<h3>Find a taco place in your area</h3>
-				</div>
-				<!-- The content of the add a place tab -->
-				<div class="tab-pane" id="tab2">
-		         	<h3>Know of another taco place? Add it here!</h3>
-		         	<form ng-submit="addTacoShop()" style = "margin-top30px;">
-				      <input type="text" ng-model="formName" placeholder="Taco shop name"></input>
-				      <br>
-				      <input type="text" ng-model="formAddress" placeholder="Address"></input>
-				      <br>
-				      <input type="text" ng-model="formCity" placeholder="City"></input>
-				      <br>
-				      <input type="text" ng-model="formState" placeholder="State"></input>
-				      <br>
-				      <input type="text" ng-model="formZip" placeholder="Zip"></input>
-				      <br>
-				      Style of tacos: <select ng-model="formStyle">
-				      	<option value="Authentic">Authentic</option>
-				      	<option value="TexMex">TexMex</option>
-				      </select>
-				      <br>
-				      <button type="submit">Add taco place</button>
-				    </form>
-				</div>
-	  </div>
+			<!-- The content of the  find tab -->
+			<div class="tab-pane active" id="tab1">
+	        	<h3>Find a taco place in your area</h3>
+			</div>
+			<!-- The content of the add a place tab -->
+			<div class="tab-pane" id="tab2">
+	         	<h3>Know of another taco place? Add it here!</h3>
+	         	<form ng-submit="addTacoShop()" style = "margin-top30px;">
+			      <input type="text" ng-model="formName" placeholder="Taco shop name"></input>
+			      <br>
+			      <input type="text" ng-model="formAddress" placeholder="Address"></input>
+			      <br>
+			      <input type="text" ng-model="formCity" placeholder="City"></input>
+			      <br>
+			      <input type="text" ng-model="formState" placeholder="State"></input>
+			      <br>
+			      <input type="text" ng-model="formZip" placeholder="Zip"></input>
+			      <br>
+			      Style of tacos: <select ng-model="formStyle">
+			      	<option value="Authentic">Authentic</option>
+			      	<option value="TexMex">TexMex</option>
+			      </select>
+			      <br>
+			      <button type="submit">Add taco place</button>
+			    </form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		    <li data-target="#myCarousel" data-slide-to="3"></li>
+		    <li data-target="#myCarousel" data-slide-to="4"></li>
+		    <li data-target="#myCarousel" data-slide-to="5"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active text-center">
+		      <p>Rainbows always end in taco stands</p>
+		    </div>
+
+		    <div class="item text-center">
+		      <p>The road to heaven is lined with taco stands.</p>
+		    </div>
+
+		    <div class="item text-center">
+	    	  <p>If you give a human a taco...he will ask you for another.</p>
+		    </div>
+
+		    <div class="item text-center">
+	    	  <p>Heaven wouldn't be heaven without tacos.</p>
+		    </div>
+
+		    <div class="item text-center">
+	    	  <p>You know you want one. Or three. Or ten.</p>
+		    </div>
+
+		    <div class="item text-center">
+	    	  <p>Tacos are like your best friends...except you eat them.</p>
+		    </div>
+
+		    <div class="item text-center">
+	    	  <p>Peace, Love, and Tacos.</p>
+		    </div>
+
+		    <!-- <div class="item text-center">
+	    	  TODO: Runner passing finish line where tacos are.
+		    </div> -->
+
+
+		  </div>
+		</div>
+	</footer>
+
+</body>
 		
