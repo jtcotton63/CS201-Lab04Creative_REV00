@@ -37,6 +37,16 @@ angular.module('TacoApp', [])
 			console.log($scope.tacoShops);
 		};
 
+		// The detailed shop info
+		$scope.displayShopDetails = function(shop) {
+			$scope.detailName = shop.name;
+			$scope.detailAddress = shop.address;
+			$scope.detailCity = shop.city;
+			$scope.detailState = shop.state;
+			$scope.detailZip = shop.zip;
+			$scope.detailStyle = shop.style;
+		};
+
 	}]);
 
 function initMap() {

@@ -14,10 +14,35 @@
 
 #shops {
   width: 20%;
+  float: left;
 }
 
 #map {
   height: 400px;
   background-color: grey;
-  width: 80%;
+  width: 100%;
+}
+
+.shop {
+	padding: 20px;
+	border: 0px 15px 0px 0px;
+	width: 100%;
+}
+
+#rightPane {
+	width: 80%;
+	float: left;
+}
+
+#shopInfo {
+	width: 100%;
+	color: white;
+}
+
+footer {
+	color: #428bca;
+	background-color: white;
+	height: 60px;
+	padding-top: 10px;
+	font-size: 25px;
 }

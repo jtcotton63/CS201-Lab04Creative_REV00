@@ -33,10 +33,21 @@
 		        	<h3>Find a taco place in your area</h3>
 		        	<div id="wrapper">
 			        	<div id="shops">
-			        		<h4>Taco Shops</h4>	
+			        		<h4>Taco Shops</h4>
+			        		<div id="shopsList" ng-repeat="shop in tacoShops">
+			        			<button class="shop" ng-click="displayShopDetails(shop)">{{shop.name}}</button>
+			        		</div>	
 			        	</div>
-			        	<div id="map">
-			        		
+			        	<div id="rightPane">
+			        		<div id="shopInfo" class="text-center">
+			        			<p>{{detailName}}</p>
+			        			<p>{{detailAddress}}</p>
+			        			<p>{{detailCity}}</p>
+			        			<p>{{detailState}}</p>
+			        			<p>{{detailZip}}</p>
+			        			<p>{{detailStyle}}</p>
+			        		</div>
+			        		<div id="map"></div>
 			        	</div>
 		        	</div>
 				</div>
@@ -69,16 +80,6 @@
 	<!-- Footer -->
 	<footer class="container">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
-		    <li data-target="#myCarousel" data-slide-to="2"></li>
-		    <li data-target="#myCarousel" data-slide-to="3"></li>
-		    <li data-target="#myCarousel" data-slide-to="4"></li>
-		    <li data-target="#myCarousel" data-slide-to="5"></li>
-		    <li data-target="#myCarousel" data-slide-to="6"></li>
-		  </ol>
 
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
