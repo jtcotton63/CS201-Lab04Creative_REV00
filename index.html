@@ -29,9 +29,18 @@
 
 		<div class="tab-content clearfix">
 			<!-- The content of the  find tab -->
-			<div class="tab-pane active" id="tab1">
-	        	<h3>Find a taco place in your area</h3>
-			</div>
+				<div class="tab-pane active" id="tab1">
+		        	<h3>Find a taco place in your area</h3>
+		        	<div id="wrapper">
+			        	<div id="shops">
+			        		<h4>Taco Shops</h4>	
+			        	</div>
+			        	<div id="map">
+			        		
+			        	</div>
+		        	</div>
+				</div>
+					
 			<!-- The content of the add a place tab -->
 			<div class="tab-pane" id="tab2">
 	         	<h3>Know of another taco place? Add it here!</h3>
@@ -109,6 +118,22 @@
 		  </div>
 		</div>
 	</footer>
-
+	<script>
+      function initMap() {
+        var uluru = {lat: 40.233845, lng: -111.658531};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWOEOCNZQ4CaQLrxEKzxtWlPrjghVscfI&callback=initMap">
+    </script>
 </body>
+</html>
 		

@@ -7,3 +7,17 @@
   background-color: #428bca;
   padding : 5px 15px;
 }
+
+#wrapper {
+  display: flex;    
+}
+
+#shops {
+  width: 20%;
+}
+
+#map {
+  height: 400px;
+  background-color: grey;
+  width: 80%;
+}
